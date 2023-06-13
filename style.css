@@ -73,7 +73,7 @@ button:active {
 
 .header-menu {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 5px;
 }
 
