@@ -371,28 +371,28 @@ th, td {
 
 .no1::before {
     position: relative;
-    right: 35px;
+    right: 20px;
     font-size: 50px;
     content: "1";
 }
 
 .no2::before {
     position: relative;
-    right: 92px;
+    right: 77px;
     font-size: 50px;
     content: "2";
 }
 
 .no3::before {
     position: relative;
-    right: 83px;
+    right: 68px;
     font-size: 50px;
     content: "3";
 }
 
 .no4::before {
     position: relative;
-    right: 82px;
+    right: 67px;
     font-size: 50px;
     content: "4";
 }
@@ -417,10 +417,9 @@ th, td {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    width: 80%;
+    width: 90%;
     padding: 50px 5px 50px 5px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 .review-box {
@@ -601,15 +600,6 @@ footer {
 }
 
 
-
-@media(max-width: 458px) {
-
-    .header-logo, .pc-menu {
-        display: none;
-    }
-
-}
-
 @media(max-width: 768px) {
  
     .pc {
@@ -659,29 +649,40 @@ footer {
     .support-flow dl {
         flex-direction: column;
         align-items: center;
-        /* margin-top: 140px; */
     }
 
     .support-flow dl:first-child {
         margin-top: 80px;
     }
 
+    .support-flow dl:nth-child(2), 
+    .support-flow dl:nth-child(3) {
+        margin-top: 100px;
+    }
+
     .support-flow dl:last-child {
         margin-bottom: 60px;
     }
 
-
     .support-flow dt {
-        width: 450px;
+        width: 400px;
         border-radius: 5px 5px 0 0;
+        font-size: 18px;
     }
 
     .support-flow dd {
+        width: 400px;
         border-radius: 0 0 5px 5px;
+        font-size: 16px;
     }
 
     .support-flow dl:not(:last-child) {
         transform: translateX(0px);
+    }
+
+    .support-flow dl:not(:last-child):after {
+        top: 10px;
+        right: 0px;
     }
 
 
@@ -735,4 +736,223 @@ footer {
     .company-text, .company-map {
         text-align: center;
     }
+}
+
+
+@media(max-width: 470px) {
+
+    .header-logo, .pc-menu {
+        display: none;
+    }
+
+    .main-contact, 
+    .common-contact {
+        border-radius: 8px;
+        padding: 10px 10px;
+        box-shadow: 3px 3px #0079b1; 
+        font-size: 14px;
+    }
+    
+    .common-header {
+        font-size: 10px;
+    }
+
+    /* Main Visual */
+
+    .main-text {
+        width: 100%;
+    }
+
+    .main-text-inner h1 {
+        font-size: 20px;
+    }
+
+    .main-text-inner h2 {
+        font-size: 12px;
+    }
+
+    .inexperienced {
+        border-bottom: 8px solid #ffe046;
+    }
+    
+    .programer {
+        border-bottom: 10px solid #ffe046;
+    }    
+
+    .medal ul {
+        align-items: center;
+    }
+
+    .medal li {
+        width: 55px;
+        height: 60px;
+        border: 2px solid #d6b50f;
+    }    
+
+    .medal p {
+        font-size: 12px;
+    }
+
+    .medal p:nth-of-type(1) {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .medal p:nth-of-type(2) {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    /* feature */
+
+    .feature-num {
+        left: 200px;
+        font-size: 20px;
+    }
+
+    .feature-area-inner h3 {
+        font-size: 12px;
+    }
+
+    .feature-inner p,
+    .feature-table p {
+        font-size: 10px;
+    }
+
+    .feature-inner figure {
+        margin: 0;
+    }
+
+    .feature-inner figure img {
+        width: 200px;
+    }
+    
+    .table-box {
+        padding: 30px 5px 5px 5px;
+    }
+
+    table {
+        font-size: 10px;
+    }    
+
+    .lhead {
+        writing-mode: vertical-rl;
+    }
+
+    /* support */
+
+    .support-message {
+        font-size: 10px;
+    }
+
+    .support-flow dl {
+        height: 60px;
+    }
+
+    .support-flow dl:first-child {
+        margin-top: 55px;
+    }
+
+    .support-flow dl:last-child {
+        margin-top: 85px;
+    }
+
+    .support-flow dt {
+        font-size: 12px;
+    }
+
+    .support-flow p {
+        font-size: 10px;
+    }
+
+    .support-flow dt {
+        width: 80%;
+    }
+    
+    .support-flow dd {
+        width: 80%;
+    }
+
+    .no1::before, 
+    .no2::before, 
+    .no3::before, 
+    .no4::before {
+        font-size: 30px;
+    }
+
+    .no2::before {
+        right: 55px;
+    }
+
+    .no3::before {
+        right: 50px;
+    }
+
+    .no4::before {
+        right: 48px;
+    }
+
+    .support-flow dl:not(:last-child):after {
+        border-top: 25px solid #006c9d;
+        border-right: 25px solid transparent;
+        border-left: 25px solid transparent;
+    }
+
+    /* review */
+
+    .review-box-wrapper {
+        width: 95%;
+        padding: 50px 0px;
+    }
+    
+    .review-box {
+        width: 180px;
+        height: 420px;
+        padding: 20px;
+        font-size: 12px;
+    }
+    
+    .review-header {
+        display: flex;
+        width: 100%;
+    }
+    
+    .review-person img {
+        width: 65px;
+    }
+    
+    .review-text {
+        width: 100%;
+    }    
+
+    /* contact */
+
+    .contact-inner h3 {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .contact-inner h3 span {
+        font-size: 10px;
+    }
+
+    .contact-inner select {
+        font-size: 14px;
+    }
+
+    .submit-btn input{
+        font-size: 14px;
+    }
+
+    /* company */
+
+    .company-inner {
+        width: 95%;
+    }
+
+    .company-map iframe {
+        width: 100%;
+    }
+
 }
