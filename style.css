@@ -113,7 +113,9 @@ button:active {
     width: 100%;
     margin-bottom: 30px;
     padding: 20px 20px 40px 20px;
-    background-color: #fff4a1;
+    background-color: rgb(255, 244, 161);
+    background-image: url(images/img_main_bg.png);
+    background-position: 35% 60%;
     box-sizing: border-box;
 }
 
@@ -131,7 +133,7 @@ button:active {
 
 .main-text-inner h1 {
     color: #fff;
-    text-shadow: 0px 0px 3px #000;
+    text-shadow: 1px 1px 5px #000;
     font-size: 32px;
 }
 
@@ -162,6 +164,7 @@ button:active {
     margin: 5px;
     border: 3px solid #d6b50f;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .medal p {
@@ -615,6 +618,7 @@ footer {
 
     .main-visual {
         padding: 0;
+        background-position: 48% 60%;
     }
 
     .main-text {
@@ -758,6 +762,11 @@ footer {
     }
 
     /* Main Visual */
+
+    .main-visual {
+        background-size: 1000px 508px;
+        background-position: 48% 50%;
+    }
 
     .main-text {
         width: 100%;
