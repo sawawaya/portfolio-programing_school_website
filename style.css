@@ -636,7 +636,11 @@ footer {
     /* feature */
 
     .feature-box {
-        width: 100%;
+        width: 471px;
+    }
+
+    .feature-num {
+        left: 220px;
     }
 
     .feature-inner {
@@ -816,8 +820,15 @@ footer {
     /* feature */
 
     .feature-num {
-        left: 200px;
-        font-size: 20px;
+        left: 120px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .feature-box {
+        width: 270px;
     }
 
     .feature-area-inner h3 {
